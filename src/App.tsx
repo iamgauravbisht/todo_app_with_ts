@@ -8,18 +8,18 @@ function App() {
   const [value, setValue] = useState<string>("");
   const [list, setList] = useState<string[]>([]);
 
-  const listBuilder = () => {
+  const listBuilder = (): void => {
     setList([...list, value]);
     setValue("");
   };
-  const deleteList = (index: number) => {
+  const deleteList = (index: number): void => {
     list.splice(index, 1);
     setList([...list]);
   };
   const updateValue = (
     e: React.ChangeEvent<HTMLInputElement>,
     index: number
-  ) => {
+  ): void => {
     list[index] = e.target.value;
     setList([...list]);
   };
