@@ -2,7 +2,7 @@
 
 purpose of this app is to practice typescript
 
-## install
+## installation
 
 ```
 npm install
